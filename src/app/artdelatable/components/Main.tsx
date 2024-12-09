@@ -49,7 +49,7 @@ const Main: React.FC = () => {
               <div
                 key={index}
                 className="w-[55px] h-[55px] bg-white rounded-sm p-1 flex justify-center items-center"
-                style={{ opacity: index === 0 ? 0.8 : 0.5 }} > // Apply opacity conditionally
+                style={{ opacity: index === 0 ? 0.8 : 0.5 }} > {/* Apply opacity conditionally */}
                 <Image src={SideTable} alt="Side Table" className="w-[40px] h-[40px] object-contain" />
               </div>
             ))}
@@ -107,16 +107,16 @@ const Main: React.FC = () => {
             <p>900W</p>
           </div>
           <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <hr className="border-[rgba(156,156,156,0.4)]" />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <hr className="border-[rgba(156,156,156,0.4)]" />
 
           {/* Add to Cart Section */}
           <div className="flex items-center space-x-4">
@@ -182,26 +182,47 @@ const Main: React.FC = () => {
               color: "#9C9C9C",
             }}
           >
-            Festi vous propose à la location un/une "Jewel – grand couteau/10pc" pour
+            Festi vous propose à la location un/une &quot;Jewel – grand couteau/10pc&quot; pour
             votre évenement et ce dès 0,35 € / pièce (HTVA). Que ce soit pour votre mariage,
-            une fête d'anniversaire ou du personnel, ce produit a fait l'objet d'une sélection
-            rigoureuse par notre équipe. Il est en location chez nous sous la référence "VAJGC". 
+            une fête d&apos;anniversaire ou du personnel, ce produit a fait l&apos;objet d&apos;une sélection
+            rigoureuse par notre équipe. Il est en location chez nous sous la référence &quot;VAJGC&quot;. 
             Nous sommes à votre disposition pour que les événements de nos clients, même en
-            last-minute, soient toujours une réussite. Vous pourrez trouver tout une série d'autre
-            produit à louer de ce type dans la catégorie "Art de la Table".
+            last-minute, soient toujours une réussite. Vous pourrez trouver tout une série d&apos;autres
+            produits à louer de ce type dans la catégorie &quot;Art de la Table&quot;.
           </p>
         </div>
 
-        {/* Right side: LIVRAISONS and QUESTIONS Sections */}
-        <div className="w-full lg:w-1/2 pt-2">
-          <div className="w-full h-[62px] flex justify-between items-center p-4 bg-[#FBF9F899]">
-            <span className="text-lg font-medium font-cabinet-grotesk">LIVRAISONS</span>
-            <Add className="text-[#393939] cursor-pointer" />
-          </div>
-
-          <div className="w-full h-[62px] flex justify-between items-center p-4 bg-[#FBF9F899]">
-            <span className="text-lg font-medium font-cabinet-grotesk">QUESTIONS</span>
-            <Add className="text-[#393939] cursor-pointer" />
+        {/* Right side: LIVRAISONS and QUESTIONS */}
+        <div className="w-full lg:w-1/2 space-y-4 pl-9 pr-[130px]">
+          <h2
+            className="font-cabinet-grotesk text-gray-900 leading-7"
+            style={{
+              fontWeight: 400,
+              fontSize: "20px",
+              lineHeight: "25px",
+            }}
+          >
+            LIVRAISONS &amp; QUESTIONS
+          </h2>
+          <div className="space-y-6">
+            <div className="flex items-center justify-between">
+              <div className="text-[16px] text-[#5D5D5D] font-geist font-medium">
+                Informations sur la livraison
+              </div>
+              <Add className="text-[#9C9C9C]" />
+            </div>
+            <div className="flex items-center justify-between">
+              <div className="text-[16px] text-[#5D5D5D] font-geist font-medium">
+                A propos du produit
+              </div>
+              <Add className="text-[#9C9C9C]" />
+            </div>
+            <div className="flex items-center justify-between">
+              <div className="text-[16px] text-[#5D5D5D] font-geist font-medium">
+                Questions sur le produit
+              </div>
+              <Add className="text-[#9C9C9C]" />
+            </div>
           </div>
         </div>
       </div>
