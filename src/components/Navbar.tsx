@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
         {/* Logo and Search Bar */}
         <div className="flex items-center space-x-4 flex-wrap sm:flex-nowrap w-full sm:w-auto">
           {/* Logo */}
-          <a href="/" className="flex">
+          <Link href="/" className="flex">
             <Image
               src={Logo}
               alt="weframetech logo"
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
               height={65}
               className="object-contain"
             />
-          </a>
+          </Link>
 
           {/* Search Bar */}
           <div className="relative w-full sm:w-[768px] h-[50px]">
