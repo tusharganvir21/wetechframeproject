@@ -87,7 +87,7 @@ const Main: React.FC = () => {
               <Image src={NotCircle} alt="Circle Icon" width={24} height={24} />
               <span className="text-base font-geist font-normal text-gray-900">50cm</span>
             </div>
-            <div className="pl-[600px] font-geist ml-auto text-xs font-normal text-[#9C9C9C]">REF:<span className="font-medium">VABGN5</span></div>
+            <div className="pl-[600px] font-geist ml-auto text-xs font-normal text-[#9C9C9C]">REF:&nbsp;<span className="font-medium">VABGN5</span></div>
           </div>
 
           {/* Grey Horizontal Line */}
