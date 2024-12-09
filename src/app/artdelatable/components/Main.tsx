@@ -49,8 +49,7 @@ const Main: React.FC = () => {
               <div
                 key={index}
                 className="w-[55px] h-[55px] bg-white rounded-sm p-1 flex justify-center items-center"
-                style={{ opacity: index === 0 ? 0.8 : 0.5 }} // Apply opacity conditionally
-              >
+                style={{ opacity: index === 0 ? 0.8 : 0.5 }} > // Apply opacity conditionally
                 <Image src={SideTable} alt="Side Table" className="w-[40px] h-[40px] object-contain" />
               </div>
             ))}
