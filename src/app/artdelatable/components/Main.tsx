@@ -194,12 +194,12 @@ const Main: React.FC = () => {
 
         {/* Right side: LIVRAISONS and QUESTIONS Sections */}
         <div className="w-1/2 space-y-6 bg-[#FBF9F899]">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center p-4">
             <span className="text-base font-medium text-[#393939] font-cabinet-grotesk">LIVRAISONS</span>
             <Add className="text-[#393939] cursor-pointer" />
           </div>
 
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center p-4">
             <span className="text-base font-medium text-[#393939] font-cabinet-grotesk">QUESTIONS</span>
             <Add className="text-[#393939] cursor-pointer" />
           </div>
