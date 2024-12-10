@@ -192,37 +192,16 @@ const Main: React.FC = () => {
           </p>
         </div>
 
-        {/* Right side: LIVRAISONS and QUESTIONS */}
-        <div className="w-full lg:w-1/2 space-y-4 pl-9 pr-[130px]">
-          <h2
-            className="font-cabinet-grotesk text-gray-900 leading-7"
-            style={{
-              fontWeight: 400,
-              fontSize: "20px",
-              lineHeight: "25px",
-            }}
-          >
-            LIVRAISONS &amp; QUESTIONS
-          </h2>
-          <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <div className="text-[16px] text-[#5D5D5D] font-geist font-medium">
-                Informations sur la livraison
-              </div>
-              <Add className="text-[#9C9C9C]" />
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="text-[16px] text-[#5D5D5D] font-geist font-medium">
-                A propos du produit
-              </div>
-              <Add className="text-[#9C9C9C]" />
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="text-[16px] text-[#5D5D5D] font-geist font-medium">
-                Questions sur le produit
-              </div>
-              <Add className="text-[#9C9C9C]" />
-            </div>
+        {/* Right side: LIVRAISONS and QUESTIONS Sections */}
+        <div className="w-1/2 space-y-6">
+          <div className="flex justify-between items-center border p-4">
+            <span className="text-lg font-semibold">LIVRAISONS</span>
+            <Add className="text-blue-500 cursor-pointer" />
+          </div>
+
+          <div className="flex justify-between items-center border p-4">
+            <span className="text-lg font-semibold">QUESTIONS</span>
+            <Add className="text-blue-500 cursor-pointer" />
           </div>
         </div>
       </div>
